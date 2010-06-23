@@ -9,7 +9,7 @@ module ThumbleMonks
           extend ClassMethods
           before_validation_on_create :generate_active_record_uuid
           class_inheritable_accessor :uuid_generation_enabled
-          attr_readonly :uuid
+          # attr_readonly :uuid
           self.uuid_generation_enabled = true
         end
       end
